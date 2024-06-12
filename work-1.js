@@ -4,11 +4,7 @@ const basicData = {
   job: "",
 };
 const component = () => {
-  const basicData = {
-    name: "asd",
-    age: 0,
-    job: "assd",
-  };
+  let obj = {};
   const decision = () => {};
   return `<html></html>`;
 };
