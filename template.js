@@ -23,16 +23,16 @@ const literal = {
   odd: "홀수",
 };
 const container = () => {
-  if (hours % 2 === 0) {
-    if (minutes % 2 === 0) {
-      return htmlComponent(literal.timeAndMinute, literal.even);
+  if (minutes % 2 === 0) {
+    if (seconds % 2 === 0) {
+      return htmlComponent(literal.minutesAndSecond, literal.even);
     }
-    return htmlComponent(literal.time, literal.even);
-  } else if (hours % 2 !== 0) {
-    if (minutes % 2 !== 0) {
-      return htmlComponent(literal.timeAndMinute, literal.odd);
+    return htmlComponent(literal.minute, literal.even);
+  } else if (minutes % 2 !== 0) {
+    if (seconds % 2 !== 0) {
+      return htmlComponent(literal.minutesAndSecond, literal.odd);
     }
-    return htmlComponent(literal.time, literal.odd);
+    return htmlComponent(literal.minute, literal.odd);
   }
 };
 /**
