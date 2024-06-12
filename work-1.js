@@ -1,7 +1,5 @@
-const basicData = {
-  name: "",
-  age: 0,
-  job: "",
+const basicData = function () {
+  return { name: "sad", age: 0, job: "sad" };
 };
 const component = () => {
   let obj = {};
